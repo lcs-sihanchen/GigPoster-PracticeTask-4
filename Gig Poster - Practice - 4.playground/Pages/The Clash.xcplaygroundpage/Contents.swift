@@ -49,6 +49,15 @@ for b in 1...11 {
     canvas.drawLine(from: Point(x: 0, y: 50*b), to: Point(x: 400, y: 50*b))
 }
 
+// Text
+canvas.drawText(message: "the clash", at: Point(x: 20, y: 80), size: 48)
+canvas.drawText(message: "with the brattles", at: Point(x: 20, y: 35), size: 8)
+canvas.drawText(message: "and dead kennedys", at: Point(x: 20, y: 25), size: 8)
+canvas.drawText(message: "matinee anc eve", at: Point(x: 105, y: 35), size: 8)
+canvas.drawText(message: "saturday / june 13 1981", at: Point(x: 105, y: 25), size: 8)
+canvas.drawText(message: "bonds international casino", at: Point(x: 260, y: 35), size: 8)
+canvas.drawText(message: "in times square, new york city", at: Point(x: 260, y: 25), size: 8)
+
 // White
 canvas.drawShapesWithFill = false
 canvas.borderColor = offWhite
@@ -80,6 +89,7 @@ canvas.drawRectangle(at: Point(x: 24*h, y: 24*h), width: 300-48*h, height: 300-4
     
  
 }
+
 
 
 
