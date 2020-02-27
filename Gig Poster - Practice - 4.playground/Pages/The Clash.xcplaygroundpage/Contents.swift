@@ -52,7 +52,7 @@ for b in 1...11 {
 // White
 canvas.drawShapesWithFill = false
 canvas.borderColor = offWhite
-canvas.translate(to: Point(x: 230, y: 170))
+canvas.translate(to: Point(x: 230, y: 168))
 canvas.rotate(by: 45)
 
 for k in 0...6 {
@@ -66,25 +66,22 @@ canvas.drawRectangle(at: Point(x: 24*k, y: 24*k), width: 300-48*k, height: 300-4
 }
 
 
+// Blue Squares
+canvas.translate(to: Point(x: -42, y: 42))
+canvas.drawShapesWithFill = false
+canvas.borderColor = blue
+for h in 0...6 {
+    
+    if  h == 6 {
+        canvas.drawShapesWithFill = true
+        canvas.fillColor = blue
+    }
+canvas.drawRectangle(at: Point(x: 24*h, y: 24*h), width: 300-48*h, height: 300-48*h, borderWidth: 12)
+    
+ 
+}
 
 
-//for y in stride(from: 90, to: 180, by: 45){
-//    canvas.rotate(by: Degrees(y))
-//for n in stride(from: 140, to: 20, by: -10){
-//
-//    if n % 20 == 0 {
-//        canvas.fillColor = offWhite
-//        canvas.drawRectangle(at: Point(x: 0, y: 0), width: n, height: n)
-//    } else if n % 20 == 10 {
-//        canvas.fillColor = orange
-//        canvas.drawRectangle(at: Point(x: 0, y: 0), width: n, height: n)
-//    }
-//
-//
-//}
-//}
-
-// gridlines
 
 
 
