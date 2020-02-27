@@ -52,10 +52,18 @@ for b in 1...11 {
 // White
 canvas.drawShapesWithFill = false
 canvas.borderColor = offWhite
-canvas.translate(to: Point(x: 230, y: 160))
+canvas.translate(to: Point(x: 230, y: 170))
 canvas.rotate(by: 45)
 
-canvas.drawRectangle(at: Point(x: 0, y: 0), width: 300, height: 300, borderWidth: 15)
+for k in 0...6 {
+    if  k == 6 {
+        canvas.drawShapesWithFill = true
+        canvas.fillColor = offWhite
+    }
+canvas.drawRectangle(at: Point(x: 24*k, y: 24*k), width: 300-48*k, height: 300-48*k, borderWidth: 12)
+    
+ 
+}
 
 
 
